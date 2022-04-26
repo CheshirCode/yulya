@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,700;0,900;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  min-height: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+}
+
+.logo__body {
+  position: relative;
+  display: flex;
+  margin: 15px 10px;
+}
+
+.socials {
+  margin: 0 auto;
+  display: flex;
+}
+.socials__item1,
+.socials__item2 {
+  display: inline-block;
+  padding: 0 10px;
+}
+.socials img {
+  height: 50px;
+  max-width: 100%;
+  margin: 35px 10px;
+}
+.socials a,
+.menu__list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+.gold-text {
+  margin: 5px auto;
+  color: #d3a614;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+span img {
+  height: 78px;
+}
+@media (max-width: 520px) {
+  .menu {
+    border: 1px solid rgb(119, 13, 13);
+  }
+}
+.menu__list {
+}
+
+.menu__item {
+  display: inline-block;
+  font-weight: 700;
+  cursor: pointer;
+}
+.menu__item a:hover {
+  color: #DBF227;
+}
+
+.menu {
+}
+.menu__list {
+  background:  #005C53;
+  border-radius: 10px;
+  display: flex;
+  margin: 15px 10px;
+  padding: 5px;
+  justify-content: space-around;
+  font-size: 24px;
+  list-style: none;
+  text-transform: uppercase;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.menu__item {
+  margin: 5px;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+.main img {
+}
+
+.author {
+  position: absolute;
+  height: 80vh;
+  max-width: 100%;
+  bottom: 0;
+  left: -100px;
+}
+.author img {
+}
+.greet-block {
+  display: flex;
+  border: 1px solid #000;
+  max-height: 40vh;
+  max-width: 100%;
+  line-height: 1.2;
+  margin: 0 10px;
+  padding: 10px 15px;
+  
+}
+.greet-block__text {
+}
+.greet-block__list {
+}
+.greet-block__image{
+  max-width: 100%;
+  height: 60vh;
+border: 1px solid #000;
+}
+
+.greet-block img{
+  position: relative;
+  bottom: 0;
+  right: 0;
+
+}
+.footer {
+  width: 100%;
+  background: #042940;
+  min-height: 100px;
+  margin: 0 auto;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__body {
+  display: flex;
+}
+.footer__item {
+  margin: 20px;
+  padding: 10px;
+  flex: 1 1 33.333%;
+}
+.copyright {
+  text-align: center;
+  margin: 5px 10px;
+  padding: 10px;
+}
+
+@media (max-width: 1125px) {
+  .logo__body {
+    flex-direction: column;
+    margin: 10px 5px;
+  }
+  .socials img {
+    max-height: 30px;
+    max-width: 100%;
+    margin: 15px 10px;
+  }
+  .gold-text {
+    font-size: 50px;
+  }
+  span img {
+    height: 40px;
+  }
+  .author {
+    display: none;
+  }
+  .footer__body {
+    flex-direction: column;
+  }
+  .footer__item {
+    margin: 10px;
+    padding: 0 10px;
+  }
+}
+
+/* Color Theme Swatches in Hex */
+.Green-Globe-On-Moss---Environmental-Concept
+
+-1-hex { color: #042940; }
+.-2-hex { color: #005C53; }
+-3-hex { color: #9FC131; }
+-4-hex { color: #DBF227; }
+-5-hex { color: #D6D58E; }
+
+/* Color Theme Swatches in RGBA */
+.Green-Globe-On-Moss---Environmental-Concept
+
+-1-rgba { color: rgba(4, 40, 63, 1); }
+-2-rgba { color: rgba(0, 91, 82, 1); }
+-3-rgba { color: rgba(158, 193, 49, 1); }
+-4-rgba { color: rgba(219, 242, 38, 1); }
+-5-rgba { color: rgba(214, 212, 142, 1); }
+
+
+
