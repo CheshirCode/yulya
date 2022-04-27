@@ -1,10 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,700;0,900;1,500&display=swap");
-
+/* Обнуление страницы ---------------------------------------------------------------------------- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
 }
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	line-height: 1;
+	text-rendering: optimizeLegibility;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+input,
+button,
+textarea {
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+/* ---------------------------------------------------------------------------------------- */
 html,
 body {
   height: 100%;
@@ -65,10 +127,11 @@ body {
 }
 span img {
   height: 78px;
+  vertical-align: baseline;
 }
 @media (max-width: 520px) {
   .menu {
-    border: 1px solid rgb(119, 13, 13);
+    margin: 10px;
   }
 }
 .menu__list {
@@ -107,44 +170,34 @@ span img {
 .main {
   flex: 1 1 auto;
 }
-.main img {
-}
 
-.author {
-  position: absolute;
-  height: 80vh;
-  max-width: 100%;
-  bottom: 0;
-  left: -100px;
+.sertificates {
 }
-.author img {
+.sertificates__body {
+  width: 100%;
 }
-.greet-block {
+.sertificates__title {
+  margin: 20px 10px;
+  color: #d3a614;
+  font-weight: 700;
+  text-align: center;
+  font-size: 30px; 
+}
+.sertificates__cards-box {
   display: flex;
-  border: 1px solid #000;
-  max-height: 40vh;
-  max-width: 100%;
-  line-height: 1.2;
-  margin: 0 10px;
-  padding: 10px 15px;
-  
 }
-.greet-block__text {
+.sertificates__card {
+  margin: 10px;
+  padding: 5px;
+  flex: 1 1 auto;
+  height: 45%;
 }
-.greet-block__list {
-}
-.greet-block__image{
-  max-width: 100%;
-  height: 60vh;
-border: 1px solid #000;
+.sertificates__image img {
+  width: 100%;
+  height: 100%;
 }
 
-.greet-block img{
-  position: relative;
-  bottom: 0;
-  right: 0;
 
-}
 .footer {
   width: 100%;
   background: #042940;
@@ -183,7 +236,8 @@ border: 1px solid #000;
     font-size: 50px;
   }
   span img {
-    height: 40px;
+    height: 38px;
+    vertical-align: baseline;
   }
   .author {
     display: none;
@@ -197,6 +251,27 @@ border: 1px solid #000;
   }
 }
 
+@media (max-width: 380px) {
+  .gold-text {
+    font-size: 40px;
+  }
+  span img {
+    height: 32px;
+    vertical-align: baseline;
+  }
+  .sertificates__cards-box {
+    flex-direction: column;
+  }
+  .menu__list {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .menu__item {
+    margin: 20px 15px;
+    font-size: 30px;
+  }
+  
+}
 /* Color Theme Swatches in Hex */
 .Green-Globe-On-Moss---Environmental-Concept
 
