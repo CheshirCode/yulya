@@ -129,11 +129,7 @@ span img {
   height: 78px;
   vertical-align: baseline;
 }
-@media (max-width: 520px) {
-  .menu {
-    margin: 10px;
-  }
-}
+
 .menu__list {
 }
 
@@ -250,7 +246,19 @@ span img {
     padding: 0 10px;
   }
 }
-
+@media (max-width: 520px) {
+  .menu {
+    margin: 10px;
+  }
+  .menu__list {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .menu__item {
+    margin: 15px;
+    font-size: 30px;
+  }
+}
 @media (max-width: 380px) {
   .gold-text {
     font-size: 40px;
@@ -261,14 +269,6 @@ span img {
   }
   .sertificates__cards-box {
     flex-direction: column;
-  }
-  .menu__list {
-    flex-direction: column;
-    margin: 10px 0;
-  }
-  .menu__item {
-    margin: 20px 15px;
-    font-size: 30px;
   }
   
 }
