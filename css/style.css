@@ -79,15 +79,20 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   background-color: #fbab7e;
   background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
   min-height: 100%;
-  /* position: relative; */
 }
-.container {
-  padding: 5px;
+[class*="__container"] {
   max-width: 1200px;
   margin: 0 auto;
+
+
+  
+}
+.container {
+  /* padding: 5px; */
 }
 .header {
 }
