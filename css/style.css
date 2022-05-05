@@ -75,7 +75,9 @@ body {
   color: #fff;
   font-size: 16px;
 }
-
+body.lock{
+  overflow: hidden;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -87,9 +89,6 @@ body {
 [class*="__container"] {
   max-width: 1200px;
   margin: 0 auto;
-
-
-  
 }
 .container {
   /* padding: 5px; */
@@ -233,11 +232,11 @@ span img {
   -ms-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
 }
-.popup:target{
+.popup.open {
   opacity: 1;
   visibility: visible;
 }
-.popup:target .popup__content {
+.popup.open .popup__content {
   transform: translate(0px, 0px);
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
@@ -342,7 +341,6 @@ span img {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-
 .sertificates {
 }
 .sertificates__body {
@@ -397,7 +395,13 @@ span img {
   margin: 5px 10px;
   padding: 10px;
 }
-
+@media (min-width: 1200px){
+  .sertificates__image img {
+    width: 100%;
+    height: 750px;
+    object-fit: contain;
+  }
+}
 @media (max-width: 1125px) {
   .logo__body {
     flex-direction: column;
@@ -426,6 +430,17 @@ span img {
     padding: 0 10px;
   }
 }
+@media (max-width: 830px){
+  .sertificates__cards-box {
+    flex-wrap: wrap;
+  }
+  .sertificates__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+    
+}
 @media (max-width: 520px) {
   .menu {
     margin: 10px;
@@ -450,7 +465,6 @@ span img {
   .sertificates__cards-box {
     flex-direction: column;
   }
-  
 }
 /* Color Theme Swatches in Hex */
 .Green-Globe-On-Moss---Environmental-Concept
