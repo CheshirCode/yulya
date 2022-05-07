@@ -92,16 +92,58 @@
             </div>
 
           </article>
-          <a href="#popup" class="gallery__link popup-link">Попап 1</a>
+          <a href="#modal" class="gallery__link modal-link">Попап 1</a>
         </div>
 
-        <div id="popup" class="popup">
-          <div class="popup__body">
-            <div class="popup__content">
-              <a href="#" class="popup__close close-popup">&#10060;</a>
-              <div class="popup__title">Фотосессия № 1</div>
-              <div class="popup__image"></div>
-              <div class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officia suscipit
+        <div id="modal" class="modal">
+          <!-- <a href="#modal" class="modal__area"></a> -->
+          <div class="modal__body">
+            <div class="modal__content">
+              <a href="#modal" class="modal__close close-modal">&#10060;</a>
+              <div class="modal__title">Портреты</div>
+              <div class="modal__image">
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div class="swiper-slide__image">
+                        <img src="img/gallery/individual/1.jpg" alt="Картинка" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-slide__image">
+                        <img src="img/gallery/individual/2.jpg" alt="Картинка" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-slide__image">
+                        <img src="img/gallery/individual/3.jpg" alt="Картинка" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-slide__image">
+                        <img src="img/gallery/individual/4.jpg" alt="Картинка" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-slide__image">
+                        <img src="img/gallery/individual/5.jpg" alt="Картинка" />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+              <div class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officia suscipit
                 consectetur architecto. Fugiat corporis veritatis quo praesentium inventore blanditiis.</div>
             </div>
           </div>

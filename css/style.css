@@ -213,8 +213,8 @@ span img {
   
 }
 
-/* Popup ------------------------------------------------------------------------------ */
-.popup {
+/* modal ------------------------------------------------------------------------------ */
+.modal {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -232,11 +232,11 @@ span img {
   -ms-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
 }
-.popup.open {
+.modal.open {
   opacity: 1;
   visibility: visible;
 }
-.popup.open .popup__content {
+.modal.open .modal__content {
   transform: translate(0px, 0px);
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
@@ -246,14 +246,14 @@ span img {
   visibility: visible;
 }
 /* темная область кликабельная */
-.popup__area {
+.modal__area {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
 }
-.popup__body {
+.modal__body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -261,9 +261,9 @@ span img {
   justify-content: center;
   padding: 30px 10px;
 }
-.popup__content {
+.modal__content {
   background-color: #fbab7e;
-  max-width: 1100px;
+  max-width: 100%;
   padding: 20px;
   position: relative;
   transition: all 0.8s ease 0s;
@@ -282,19 +282,30 @@ span img {
   -ms-transition: all 0.8s ;
   -o-transition: all 0.8s ;
 }
-.popup__close {
+
+.modal__close {
   position: absolute;
   top: 8px;
   right: 5px;
 }
-.popup__title {
+.modal__title {
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
   margin: 0px 0px 20px 0px;
 }
-.popup__image {
+.modal__image {
+  
 }
-.popup__text {
+.modal__image img{
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 80vh;
+  object-fit: contain;
+}
+
+.modal__text {
+  padding: 10px;
   color: #fff;
 }
 
