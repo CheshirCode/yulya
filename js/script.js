@@ -112,9 +112,9 @@ function bodyUnlock() {
   }, timeout);
 }
 
-// document.addEventListener('keydown', function () {
-//   if (el.key === 'Escape') {
-//     const modalActive = document.querySelector('.modal.open');
-//     modalClose(modalActive);
-//   }
+document.addEventListener('keydown', function () {
+  if (el.key === 'Escape') {
+    const modalActive = document.querySelector('.modal.open');
+    modalClose(modalActive);
+  }
 });

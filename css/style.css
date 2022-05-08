@@ -173,6 +173,85 @@ span img {
 .main {
   flex: 1 1 auto;
 }
+.greet {
+}
+.greet__body {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+}
+.greet__title {
+  flex: 1 1 100%;
+  padding: 0px 0px 20px 0px;
+  text-align: center;
+  /* color: #005C53; */
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  font-weight: 700;
+}
+.greet__image {
+  flex: 1 1 30%;
+}
+.greet__image img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.greet__text {
+  line-height: 1.4;
+  color: #000;
+  flex: 1 1 70%;
+  font-size: 16px;
+}
+@media (max-width: 820px){
+  .greet__image {
+    flex: 1 1 40%;
+    margin: 0px 0px 20px 0px;
+  }
+  .greet__text {
+    flex: 1 1 60%;
+    font-size: 18px;
+  }
+}
+@media (max-width: 375px){
+  .greet__image {
+
+    width: 100%;
+    flex: 1 1 100%;
+  
+  }
+}
+
+.button {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.button a {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #000;
+  background-color: #d3a614;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.button a:hover {
+  background-color: #f7ce68;
+}
+
 .gallery {
 }
 .gallery1 {
@@ -203,6 +282,9 @@ span img {
 }
 .swiper-pagination {
   padding: 20px 0px 20px 0px;
+}
+[class*="swiper-button"] {
+  margin: 0 auto;
 }
 .swiper-button-prev {
   margin: 0px 10px;
@@ -254,17 +336,19 @@ span img {
   left: 0;
 }
 .modal__body {
-  min-height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 10px;
   padding: 30px 10px;
 }
 .modal__content {
   background-color: #fbab7e;
-  max-width: 100%;
-  padding: 20px;
+  max-width: 90%;
+  min-height: 90%;
+  /* padding: 10px; */
   position: relative;
   transition: all 0.8s ease 0s;
   -webkit-transition: all 0.8s ease 0s;
@@ -291,9 +375,12 @@ span img {
 .modal__title {
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
-  margin: 0px 0px 20px 0px;
+  padding: 0px 0px 20px 0px;
 }
 .modal__image {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #000;
   
 }
 .modal__image img{
@@ -303,14 +390,12 @@ span img {
   height: 80vh;
   object-fit: contain;
 }
-
 .modal__text {
   padding: 10px;
   color: #fff;
 }
-
 .price {
-  /* display: none; */
+
 }
 .price__body {
   max-width: 100%;
