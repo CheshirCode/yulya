@@ -174,7 +174,6 @@ span img {
 .toTop {
   border: 1px solid #000;
   position: fixed;
-  display: inline-block;
   right: 20px;
   bottom: 20px;
   background-color: #005c53cb;
@@ -187,7 +186,6 @@ span img {
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
   z-index: 5;
-
 }
 
 .main {
@@ -438,7 +436,7 @@ span img {
 }
 @media (max-width: 375px) {
   .slide h3 {
-    font-size: 32px;
+    font-size: 30px;
   }
     
 }

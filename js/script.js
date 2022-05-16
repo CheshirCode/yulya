@@ -137,3 +137,25 @@ function slidesPlugin(activeSlide) {
   }
 }
 slidesPlugin(0)
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  let toTopBtn = document.querySelector('.toTop');
+
+  window.onscroll = function () {
+    if (window.pageYOffset > 580) {
+      toTopBtn.style.display = 'inline-block'
+    } else {
+      toTopBtn.style.display = 'none'
+    }
+  }
+
+  // плавный скролл наверх
+  toTopBtn.addEventListener('click', function () {
+    window.scrollBy({
+      top: -document.documentElement.scrollHeight,
+      behavior: 'smooth'
+    });
+  });
+});
