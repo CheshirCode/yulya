@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let toTopBtn = document.querySelector('.toTop');
 
   window.onscroll = function () {
-    if (window.pageYOffset > 580) {
+    if (window.scrollY > 580) {
       toTopBtn.style.display = 'inline-block'
     } else {
       toTopBtn.style.display = 'none'
